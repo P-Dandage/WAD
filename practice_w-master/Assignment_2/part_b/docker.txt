@@ -1,0 +1,63 @@
+1) for checking docker version 
+>docker -v
+
+
+2) for checking docker images
+> docker images
+
+
+3) for checking which container available
+> docker ps
+
+
+4)for pulling oenjdk image in docker
+>docker pull openjdk
+
+
+5) again step 2 and 3 for check images
+
+
+
+6)for run this oenjdk image using following command
+>docker run --name JAVA -it -d openjdk
+here it = for iterable
+     -d = for detach mean for runing image in background
+
+7) again step 3
+
+
+8) for execution 
+>docker exec -it JAVA jshell
+>docker exec -it name_of_image command_for_run_it
+
+
+9)
+jshell>System.out.println("Hello docker");
+
+
+10)
+jshell>int a=10;
+
+11)
+jshell>int b=20;
+
+12)
+jshell>System.out.println(a+b);
+
+
+13) for out from running the container image
+jshell>/exit
+
+14) step 3 for check which container is runing
+
+
+15)for stop container
+>docker stop container_id
+
+
+16) for remove container
+>docker container rm container_id
+
+
+17) step 3
+

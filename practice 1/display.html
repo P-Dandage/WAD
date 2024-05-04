@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> <form id="student" style="margin: 100px;">
+        
+    Name : <input type="text" id="name" placeholder="enter name"><br>
+    Roll NO :<input type="text" id="roll" placeholder="enter name"><br>
+    Marks :<input type="text" id="mark" placeholder="enter name"><br>
+    <Button type="submit"> Submit</Button>
+    </form>
+<body>
+    <script src="script.js"></script>
+    <script>
+        const datas=JSON.parse(localStorage.getItem('data'));
+      
+        document.getElementById('name').value=datas.sname;
+        document.getElementById('roll').value=datas.sroll;
+        document.getElementById('mark').value=datas.smark;
+ 
+                </script>
+    
+</body>
+</html>
